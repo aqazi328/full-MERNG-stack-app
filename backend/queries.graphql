@@ -1,0 +1,45 @@
+# {												# get user and issue of certain comment with id 1
+#   comment(_id: 1) {
+#     text
+#     user {
+#       username
+#     }
+#     issue{
+#       title
+#     }
+#   }
+# }
+
+# {								# return all users with select info
+#   users{
+#     username
+#   }
+# }
+
+# {					# return all issues and comments under each issue with posted each respectively
+#   issues{
+#     title
+#     description
+#     user {
+#       username
+#     }
+#     comments{
+#       text
+#       user{
+#         username
+#       }
+#     }
+#   }
+# }
+
+# {				# get all issues posted by a certain user with id 1
+#   user(_id:1){
+#     issues {
+#       _id
+#       title
+#       description
+#       upvotes
+#       downvotes
+#     }
+#   }
+# }
